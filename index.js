@@ -2,8 +2,9 @@ console.log('hello Peter');
 
 /* 
 Tamagotchi creature starts out with these traits:
-Birth date/time
+Birth date/time: 
 Age : 0
+Name: Input by user
 Life Stage: Baby
 Hunger: 100 (on a scale from 0 - full to 150 - starved to death)
 Humor: 50 (On a scale from 0 - foul mood to 150 - euphoric)
@@ -57,7 +58,13 @@ Tiredness increases (sleep automatic)
 
 When age gets to 100, Life Stage updates to Dead
 User has one possible action:
-    Choose Epitaph (Text input, becomes a gravestone for download)
+    Choose Epitaph (Text input, becomes a gravestone for download, gravestone goes into cemetary - local or online?)
     Score calculation: Sum humor from each life stage, add wisdom. Life score is written on the epitaph.
+    Humor gets reset at each life stage, wisdom accumulates throughout life.
+
+Changing state: +/- is a bit random, or based upon other combinations of traits. 'Your baby was too tired to eat, it spat everything up!'
+Time must elapse: methos advances time and adjusts hunger, humor, tiredness
+When you open browser, look up tamagotchi age with Date.now(), figure out current state by calling 'advance time' until time is correct
+Say it takes a month to win the game, then a day IRL is 3 yrs in the game
 
 */
